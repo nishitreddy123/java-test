@@ -1,9 +1,9 @@
 pipeline {
-    agent {label 'slave'}
+    agent any
 
-    environment {
-        function_name = 'test-java-app'
-    }
+   // environment {
+     //   function_name = 'test-java-app'
+ //   }
 
     parameters {
         string(name: 'RollBackVersion', description: "Please enter rollback version")
